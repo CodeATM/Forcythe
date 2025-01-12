@@ -1,4 +1,5 @@
 import Button from "../Reuseables/Button";
+import BlogImage from "../assets/Images/blog.jpg"
 
 const Blog = () => {
   const title = [
@@ -29,7 +30,7 @@ const Blog = () => {
               <div className="h-60 sm:h-56 relative mb-6">
                 <div className="bg-accent z-0 w-full h-full absolute top-0 left-0 bg-opacity-10 rounded-[1.3rem] animate-pulse"></div>
                 <img
-                  src="/src/assets/Images/blog.jpg"
+                  src={BlogImage}
                   alt=""
                   className="w-full h-full rounded-[1.3rem] transition-transform duration-300 transform group-hover:scale-105"
                 />

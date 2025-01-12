@@ -77,10 +77,11 @@ body {
 }
 
 .text-blue {
-  color: rgb(96, 166, 231);
+  color: #60A6E7; /* rgb(96, 166, 231) */
 }
+
 .text-gray {
-  color: rgb(174, 169, 177);
+  color: #AEA9B1; /* rgb(174, 169, 177) */
 }
 
 /* Hide scrollbar for IE, Edge and Firefox */
