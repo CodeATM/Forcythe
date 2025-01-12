@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-gordita: "Gordita", sans-serif;
+  }
+}
+
+/* Font declarations */
+@font-face {
+  font-family: "Gordita";
+  src: url("/fonts/Gordita/Gordita-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gordita";
+  src: url("/fonts/Gordita/Gordita-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gordita";
+  src: url("/fonts/Gordita/Gordita-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gordita";
+  src: url("/fonts/Gordita/Gordita-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Gordita";
+  src: url("/fonts/Gordita/Gordita-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-gordita);
+  background-color: #030516;
+  color: white;
+}
+
+/* Your existing utility classes */
+.max-screen-wrapper {
+  @apply w-full px-[20px] lg:px-[30px];
+}
+
+.max-screen-inner {
+  @apply w-full max-w-[1336px] mx-auto;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+}
+
+.text-blue {
+  color: rgb(96, 166, 231);
+}
+.text-gray {
+  color: rgb(174, 169, 177);
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+* {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
