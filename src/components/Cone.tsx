@@ -24,7 +24,7 @@ const Cone = () => {
             </p>
           </div>
           <div className="flex justify-evenly sm:justify-between items-center gap-3">
-            <div className="flex flex-col gap-3 text-left w-fit">
+            <div className="flex flex-col gap-3 w-fit justify-center text-center ">
               <h1 className="text-[1.7rem] sm:text-[2rem] md:text-[3rem] text-[#60A6E7] font-medium">
                 50+
               </h1>
@@ -32,7 +32,7 @@ const Cone = () => {
                 Clients
               </p>
             </div>
-            <div className="flex flex-col gap-3 text-left w-fit">
+            <div className="flex flex-col gap-3 text-center  w-fit">
               <h1 className="text-[1.7rem] sm:text-[2rem] md:text-[3rem] text-[#60A6E7] font-medium">
                 120+
               </h1>
@@ -40,7 +40,7 @@ const Cone = () => {
                 Projects
               </p>
             </div>
-            <div className="flex flex-col gap-3 text-left w-fit">
+            <div className="flex flex-col gap-3 text-center  w-fit">
               <h1 className="text-[1.7rem] sm:text-[2rem] md:text-[3rem] text-[#60A6E7] font-medium">
                 10+
               </h1>
@@ -48,7 +48,7 @@ const Cone = () => {
                 Team Leads
               </p>
             </div>
-            <div className="flex flex-col gap-3 text-left w-fit">
+            <div className="flex flex-col gap-3 text-center w-fit">
               <h1 className="text-[1.7rem] sm:text-[2rem] md:text-[3rem] text-[#60A6E7] font-medium">
                 10+
               </h1>

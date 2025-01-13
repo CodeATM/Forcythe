@@ -35,7 +35,7 @@ const Testimonials = () => {
                   <img
                     src={item.tabIcon}
                     alt={`${item.tabName} icon`}
-                    className="w-16 h-16" // Adjust the width and height as needed
+                    className="w-16 h-16"
                   />
                   <p>{item.tabName || " "}</p>
                 </div>
@@ -44,26 +44,35 @@ const Testimonials = () => {
           </div>
         </div>
 
-        {/* Display active testimonial content */}
-        <div className="mt-5 w-full md:w-[70%] lg:w-[50%] rounded-[1.8rem] flex flex-col sm:flex-row p-5 sm:p-7 bg-[#0C2645]">
-          <div className="sm:basis-[58%] pr-3 space-y-5">
-            <p>{TestimonialData[activeTab]?.companyName}</p>
-            <p>{TestimonialData[activeTab]?.content}</p>
-            <p>{TestimonialData[activeTab]?.name}</p>
-          </div>
-          <div className="w-full h-[24rem] sm:w-auto sm:h-auto sm:basis-[42%] relative object-top mt-3 sm:mt-0">
-            <img
-              src={TestimonialData[activeTab]?.userImage}
-              alt="User"
-              style={{
-                position: "absolute",
-                height: "100%",
-                width: "100%",
-                inset: "0px",
-                objectFit: "cover",
-              }}
-            />
-          </div>
+        {/* Testimonials under each tab */}
+        <div className="mt-5 w-full">
+          {TestimonialData.map((item, index) => (
+            <div
+              key={item.id}
+              className={`${
+                activeTab === index ? "block" : "hidden"
+              } md:min-h-[20rem] md:w-[70%] lg:w-[50%] rounded-[1.8rem] flex flex-col sm:flex-row p-5 sm:p-7 bg-[#0C2645] mx-auto`}
+            >
+              <div className="sm:basis-[58%] pr-3 space-y-5">
+                <p>{item.companyName}</p>
+                <p>{item.content}</p>
+                <p>{item.name}</p>
+              </div>
+              <div className="w-full min-h-[20rem] sm:w-auto sm:h-auto sm:basis-[42%] relative object-top mt-3 sm:mt-0">
+                <img
+                  src={item.userImage}
+                  alt="User"
+                  style={{
+                    position: "absolute",
+                    height: "100%",
+                    width: "100%",
+                    inset: "0px",
+                    objectFit: "cover",
+                  }}
+                />
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </div>

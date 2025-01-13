@@ -1,24 +1,7 @@
 import Marquee from "react-fast-marquee";
+import { images1, images2 } from "../Dummy";
 
 const Clients = () => {
-  const images1 = [
-    "https://forcythe.com/images/Project%20Images/stac.svg",
-    "https://forcythe.com/images/Project%20Images/activity.svg",
-    "https://forcythe.com/images/Project%20Images/africaFund.svg",
-    "https://forcythe.com/images/Project%20Images/starks.svg",
-    "https://forcythe.com/images/Project%20Images/exec-pro.svg",
-    "https://forcythe.com/images/Project%20Images/phone.svg",
-  ];
-
-  const images2 = [
-    "https://forcythe.com/images/Project%20Images/starks.svg",
-    "https://forcythe.com/images/Project%20Images/stac.svg",
-    "https://forcythe.com/images/Project%20Images/africaFund.svg",
-    "https://forcythe.com/images/Project%20Images/phone.svg",
-    "https://forcythe.com/images/Project%20Images/exec-pro.svg",
-    "https://forcythe.com/images/Project%20Images/activity.svg",
-  ];
-
   return (
     <div className="py-10">
       <div className="min-h-[60px]">

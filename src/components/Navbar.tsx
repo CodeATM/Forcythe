@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { HiMenuAlt3 } from "react-icons/hi";
 import Button from "../Reuseables/Button";
+import forcyteLogo from "../assets/Images/forcythe-logo.svg"
 
 const NavItem = ({ text, scroll }: { text: string; scroll: boolean }) => (
   <h1
@@ -62,7 +63,7 @@ const Navbar = () => {
           <div className="flex gap-[30px]">
             <div className="logo">
               <img
-                src="https://forcythe.com/images/forcythe%20logo.svg"
+                src={forcyteLogo}
                 alt=""
               />
             </div>

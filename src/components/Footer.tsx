@@ -1,3 +1,4 @@
+import forcyteLogo from "../assets/Images/forcythe-logo.svg"
 const Footer = () => {
   const Links = [
     "https://forcythe.com/images/facebook.svg",
@@ -52,7 +53,7 @@ const Footer = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 lg:col-span-2 gap-10 md:gap-0">
             <div className="lg:pl-14 md:col-span-2 md:pr-10">
               <img
-                src="https://forcythe.com/images/forcythe%20logo.svg"
+                src={forcyteLogo}
                 alt=""
               />
               <p className="text-base text-darkGrey leadin font-normal">
